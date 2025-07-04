@@ -8,7 +8,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-image: url("/public/fiordos.jpg");
+  background-image: url("/public/picture-1.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -155,8 +155,10 @@ main {
 }
 
 .page-info {
-  font-size: 1.1rem;
-  color: black;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgb(89, 152, 223);
+  border-radius: 8px;
 }
 
 /* Estilos para la página de detalles */
@@ -267,7 +269,7 @@ main {
   color: #333;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid pink;
+  border-bottom: 2px solid rgb(89, 152, 223);
 }
 
 .info-content {
@@ -362,6 +364,13 @@ main {
 }
 
 @media (max-width: 768px) {
+  body{
+    background-image: url("/public/picture-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
   .countries-grid {
     grid-template-columns: 1fr;
   }
