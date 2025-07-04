@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países de Europa del Norte</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header>
+        <h1>Países de Europa del Norte</h1>
+        <p>Si te interesa saber informacion sobre los paises del norte de europa,estas en la pagina correcta</p>
+    </header>
+    
+    <main>
+        <section class="filters-section">
+            <div class="filters-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Buscar país por nombre..." class="search-input">
+                </div>
+                
+                <div class="filter-group">
+                    <select id="currency-filter" class="filter-select">
+                        <option value="">Todas las monedas</option>
+                    </select>
+                
+                    <select id="sort-filter" class="filter-select">
+                        <option value="name-asc">Nombre A-Z</option>
+                        <option value="name-desc">Nombre Z-A</option>
+                    </select>
+                
+                    <button id="clear-filters" class="clear-btn">Limpiar filtros</button>
+                </div>
+            </div>
+        </section>
+
+    
+        <div id="loading" class="loading">
+            <p>Cargando países...</p>
+        </div>
+        
+        <div id="error" class="error hidden">
+            <p>Error al cargar los países. Por favor, intenta de nuevo.</p>
+        </div>
+        
+        <div id="countries-container" class="countries-container hidden">
+            <div id="countries-grid" class="countries-grid">
+            </div>
+            
+            <div class="pagination">
+                <button id="prev-btn" class="pagination-btn" disabled>Anterior</button>
+                <span id="page-info" class="page-info">Página 1 de 1</span>
+                <button id="next-btn" class="pagination-btn" disabled>Siguiente</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer">&copy; Todos los derechos están reservados.</p>
+    </footer>
+    
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>
+

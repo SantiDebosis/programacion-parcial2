@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del País</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="back-btn">← Volver a la lista</a>
+        </nav>
+        <h1 id="country-title">Detalles del País</h1>
+    </header>
+    
+    <main>
+        <div id="loading" class="loading">
+            <p>Cargando detalles del país...</p>
+        </div>
+        
+        <div id="error" class="error hidden">
+            <p>Error al cargar los detalles del país.</p>
+            <a href="./index.html">Volver a la lista</a>
+        </div>
+        
+        <div id="country-details" class="country-details hidden">
+            <div class="country-header">
+                <div class="flags-section">
+                    <img id="country-flag" class="country-flag" src="/placeholder.svg" alt="">
+                    <img id="coat-of-arms" class="coat-of-arms" src="/placeholder.svg" alt="">
+                </div>
+                <div class="country-basic-info">
+                    <h2 id="country-name"></h2>
+                    <p id="country-official-name"></p>
+                    <div class="country-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Población:</span>
+                            <span id="population" class="stat-value"></span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Área:</span>
+                            <span id="area" class="stat-value"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📍 Información Geográfica</h3>
+                    <div class="info-content">
+                        <div class="info-item">
+                            <strong>Capital:</strong>
+                            <span id="capital"></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Región:</strong>
+                            <span id="region"></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Subregión:</strong>
+                            <span id="subregion"></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Continente:</strong>
+                            <span id="continents"></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Zona horaria:</strong>
+                            <span id="timezones"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>🌍 Información Cultural</h3>
+                    <div class="info-content">
+                        <div class="info-item">
+                            <strong>Idiomas:</strong>
+                            <span id="languages"></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Demónimo:</strong>
+                            <span id="demonyms"></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Lado de conducción:</strong>
+                            <span id="car-side"></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Código FIFA:</strong>
+                            <span id="fifa"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>💰 Monedas</h3>
+                    <div id="currencies-list" class="currencies-container"></div>
+                </div>
+
+                <div class="info-card">
+                    <h3>🗺️ Países Fronterizos</h3>
+                    <div id="borders-list" class="borders-container"></div>
+                </div>
+
+                <div class="info-card">
+                    <h3>ℹ️ Información Adicional</h3>
+                    <div class="info-content">
+                        <div class="info-item">
+                            <strong>Independiente:</strong>
+                            <span id="independent"></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Miembro de la ONU:</strong>
+                            <span id="un-member"></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Código de llamada:</strong>
+                            <span id="calling-codes"></span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Dominio de internet:</strong>
+                            <span id="tld"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p class="footer">&copy; Todos los derechos están reservados.</p>
+    </footer>
+
+    <script type="module" src="./src/js/details.js"></script>
+</body>
+</html>
